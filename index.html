@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bonk Jr — Bonk's Son | The Community Meme Coin</title>
+  <meta name="description"
+    content="Bonk Jr — Bonk's son is here. 100% community-owned, zero team allocation. Grab a bag and push forward." />
+  <link rel="icon" type="image/jpeg" href="images/bonkjr-mascot.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="images/bonkjr-mascot.jpeg" alt="Bonk Jr" class="loader-logo" />
+      <div class="loader-bar-wrapper">
+        <div class="loader-bar"></div>
+      </div>
+      <p class="loader-text">LOADING BONK JR...</p>
+    </div>
+  </div>
+
+  <!-- ========== CURSOR GLOW ========== -->
+  <div id="cursor-glow"></div>
+
+  <!-- ========== PARTICLES CANVAS ========== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="images/bonkjr-mascot.jpeg" alt="Bonk Jr" />
+        <span>BONK JR</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#tokenomics" class="nav-link">Tokenomics</a></li>
+        <li><a href="#fees" class="nav-link">Fees</a></li>
+        <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+        <li><a href="#community" class="nav-link">Community</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://x.com/_bonkjr" class="social-icon" aria-label="X (Twitter)" target="_blank"><i
+            class="fab fa-x-twitter"></i></a>
+        <a href="#community" class="btn-nav-buy">Join Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo-wrapper">
+        <img src="images/bonkjr-mascot.jpeg" alt="Bonk Jr" class="hero-logo" />
+      </div>
+      <h1 class="hero-title glow-text">BONK JR</h1>
+      <p class="hero-sub">Bonk's Son Is Here 🐶🔥</p>
+      <p class="hero-desc">100% community-owned. Zero team allocation. Zero marketing allocation. Just pure community
+        power. Grab a bag and push forward.</p>
+      <div class="hero-btns">
+        <a href="#community" class="btn-primary">JOIN THE PACK <i class="fas fa-paw"></i></a>
+        <a href="https://x.com/_bonkjr" class="btn-secondary" target="_blank">FOLLOW ON X <i
+            class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <!-- Scrolling ticker -->
+    <!-- <div class="hero-ticker">
+      <div class="ticker-track">
+        <span>🐶 BONK JR</span><span>🔥 100% COMMUNITY</span><span>🚀 GRAB A BAG</span><span>💎 PUSH FORWARD</span>
+        <span>🐶 BONK JR</span><span>🔥 100% COMMUNITY</span><span>🚀 GRAB A BAG</span><span>💎 PUSH FORWARD</span>
+        <span>🐶 BONK JR</span><span>🔥 100% COMMUNITY</span><span>🚀 GRAB A BAG</span><span>💎 PUSH FORWARD</span>
+        <span>🐶 BONK JR</span><span>🔥 100% COMMUNITY</span><span>🚀 GRAB A BAG</span><span>💎 PUSH FORWARD</span>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">About <span class="accent">Bonk Jr</span></h2>
+          <div class="accent-divider"></div>
+          <p class="about-lead">The son of Bonk has arrived — and he's here to make his mark.</p>
+          <p>Bonk Jr isn't just another meme coin — it's a movement. Born from the legacy of Bonk, raised by the
+            community. No insiders, no VC bags, no shady deals. Just a cute pup with big dreams and a community that
+            believes.</p>
+          <p>Every token belongs to the community. Every fee goes back to growth, burns, listings, and giving back to
+            animal shelters. This is crypto the way it should be.</p>
+          <a href="#community" class="btn-primary">Join the Family <i class="fas fa-heart"></i></a>
+        </div>
+        <div class="about-visual reveal">
+          <div class="about-mascot-wrapper">
+            <img src="images/bonkjr-mascot.jpeg" alt="Bonk Jr Mascot" class="about-mascot" />
+          </div>
+          <div class="about-card-glow">
+            <div class="about-card">
+              <i class="fas fa-users about-icon"></i>
+              <h3>Community First</h3>
+              <p>100% community-owned. No team tokens, no marketing wallets. Pure decentralization.</p>
+            </div>
+            <div class="about-card">
+              <i class="fas fa-fire about-icon"></i>
+              <h3>Burn & Build</h3>
+              <p>Transaction fees fund buybacks, burns, and real ecosystem growth.</p>
+            </div>
+            <div class="about-card">
+              <i class="fas fa-paw about-icon"></i>
+              <h3>Give Back</h3>
+              <p>A portion of all fees goes to animal shelter donations. Bonk Jr cares.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TOKENOMICS SECTION ========== -->
+  <section id="tokenomics" class="section">
+    <div class="container">
+      <div class="tokenomics-header reveal">
+        <h2 class="section-title">Tokenomics</h2>
+        <div class="accent-divider center"></div>
+        <p class="tokenomics-subtitle">Simple. Transparent. Community-owned.</p>
+      </div>
+      <div class="tokenomics-showcase reveal">
+        <div class="tokenomics-supply-card">
+          <div class="supply-icon"><i class="fas fa-coins"></i></div>
+          <div class="supply-info">
+            <p class="supply-label">Total Supply</p>
+            <h3 class="supply-number">1,000,000,000</h3>
+            <p class="supply-sub">One Billion Tokens</p>
+          </div>
+        </div>
+        <div class="tokenomics-allocation-grid">
+          <div class="alloc-card community-card" data-percent="100">
+            <div class="alloc-ring">
+              <svg viewBox="0 0 120 120">
+                <circle class="bg" cx="60" cy="60" r="50" />
+                <circle class="fg" cx="60" cy="60" r="50" />
+              </svg>
+              <span class="alloc-pct">100%</span>
+            </div>
+            <div class="alloc-info">
+              <h3>Community Owned</h3>
+              <p>Every single token belongs to the community. No hidden wallets, no insider allocation.</p>
+            </div>
+          </div>
+          <div class="alloc-card zero-card" data-percent="0">
+            <div class="alloc-ring">
+              <svg viewBox="0 0 120 120">
+                <circle class="bg" cx="60" cy="60" r="50" />
+              </svg>
+              <span class="alloc-pct zero">0%</span>
+            </div>
+            <div class="alloc-info">
+              <h3>Marketing Allocation</h3>
+              <p>Zero tokens reserved for marketing. Growth is organic and community-driven.</p>
+            </div>
+          </div>
+          <div class="alloc-card zero-card" data-percent="0">
+            <div class="alloc-ring">
+              <svg viewBox="0 0 120 120">
+                <circle class="bg" cx="60" cy="60" r="50" />
+              </svg>
+              <span class="alloc-pct zero">0%</span>
+            </div>
+            <div class="alloc-info">
+              <h3>Team Reserve</h3>
+              <p>Zero tokens for the team. Full commitment to decentralization and fairness.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEES / UTILITIES SECTION ========== -->
+  <section id="fees" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Transaction Fees</h2>
+      <div class="accent-divider center reveal"></div>
+      <p class="fees-intro reveal">All fees generated from transactions are directed toward building and giving back.
+      </p>
+      <div class="fees-grid reveal">
+        <div class="fee-card">
+          <div class="fee-icon-wrapper">
+            <i class="fas fa-bullhorn fee-icon"></i>
+            <div class="fee-glow"></div>
+          </div>
+          <h3>Marketing & Growth</h3>
+          <p>Fueling ecosystem expansion, partnerships, and community awareness campaigns.</p>
+        </div>
+        <div class="fee-card">
+          <div class="fee-icon-wrapper">
+            <i class="fas fa-exchange-alt fee-icon"></i>
+            <div class="fee-glow"></div>
+          </div>
+          <h3>Exchange Listings</h3>
+          <p>Getting Bonk Jr listed on major exchanges to increase accessibility and liquidity.</p>
+        </div>
+        <div class="fee-card">
+          <div class="fee-icon-wrapper">
+            <i class="fas fa-fire fee-icon"></i>
+            <div class="fee-glow"></div>
+          </div>
+          <h3>Buybacks & Burns 🔥</h3>
+          <p>Reducing supply, increasing scarcity. Every burn makes your bag worth more.</p>
+        </div>
+        <div class="fee-card">
+          <div class="fee-icon-wrapper">
+            <i class="fas fa-paw fee-icon"></i>
+            <div class="fee-glow"></div>
+          </div>
+          <h3>Animal Shelter Donations</h3>
+          <p>Giving back to our furry friends. Bonk Jr supports animal shelters worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ROADMAP SECTION ========== -->
+  <section id="roadmap" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Roadmap</h2>
+      <div class="accent-divider center reveal"></div>
+      <div class="roadmap-timeline">
+        <div class="roadmap-line"></div>
+        <div class="roadmap-item" data-phase="1">
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-card">
+            <div class="roadmap-phase">Phase 1</div>
+            <h3>Organic Growth</h3>
+            <p class="roadmap-target">Target: 1,000–5,000 holders</p>
+            <ul>
+              <li>Community Growth</li>
+              <li>Expansion of team members</li>
+              <li>Create more awareness on socials</li>
+              <li>Aggressive shilling</li>
+              <li>X raids</li>
+              <li>Launch website</li>
+            </ul>
+          </div>
+        </div>
+        <div class="roadmap-item" data-phase="2">
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-card">
+            <div class="roadmap-phase">Phase 2</div>
+            <h3>Marketing</h3>
+            <p class="roadmap-target">Target: 5,000–20,000 holders</p>
+            <ul>
+              <li>List on CMC and CoinGecko</li>
+              <li>Campaigns, giveaways, contests</li>
+              <li>Facebook, X, Instagram ads</li>
+              <li>Contract audit</li>
+              <li>YouTube &amp; TikTok videos</li>
+              <li>Strategic partnerships</li>
+            </ul>
+          </div>
+        </div>
+        <div class="roadmap-item" data-phase="3">
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-card">
+            <div class="roadmap-phase">Phase 3</div>
+            <h3>BONK JR VERSE</h3>
+            <p class="roadmap-target">Target: 20,000–100,000 holders</p>
+            <ul>
+              <li>Bonk Jr games</li>
+              <li>List on CEX</li>
+              <li>NFT Development</li>
+              <li>Partnerships &amp; donations</li>
+              <li>Community reward system</li>
+              <li>Website updates</li>
+            </ul>
+          </div>
+        </div>
+        <div class="roadmap-item" data-phase="4">
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-card">
+            <div class="roadmap-phase">Phase 4</div>
+            <h3>Expansion</h3>
+            <p class="roadmap-target">Target: 100,000–1,000,000 holders</p>
+            <ul>
+              <li>More Bonk Jr Verse updates</li>
+              <li>NFT release</li>
+              <li>Outreach in schools globally</li>
+              <li>Bonk Jr merch</li>
+            </ul>
+          </div>
+        </div>
+        <div class="roadmap-item" data-phase="5">
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-card">
+            <div class="roadmap-phase">Phase 5</div>
+            <h3>Infinity</h3>
+            <p class="roadmap-target">The journey never ends</p>
+            <ul>
+              <li>Building continues</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOCIAL / COMMUNITY SECTION ========== -->
+  <section id="community" class="section">
+    <div class="container">
+      <div class="community-content reveal">
+        <img src="images/bonkjr-mascot.jpeg" alt="Bonk Jr" class="community-mascot" />
+        <h2 class="community-title">JOIN THE<br /><span class="accent">BONK JR FAMILY</span></h2>
+        <div class="accent-divider center"></div>
+        <p class="community-text">Grab a bag and push forward. Be part of the most wholesome community in crypto.</p>
+        <div class="community-btns">
+          <a href="#" class="btn-community holders">
+            <i class="fas fa-crown"></i> Top Holder Group
+          </a>
+          <a href="#" class="btn-community meme">
+            <i class="fas fa-face-laugh-squint"></i> Meme Group
+          </a>
+          <a href="https://x.com/_bonkjr" class="btn-community twitter" target="_blank">
+            <i class="fab fa-x-twitter"></i> Follow on X
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-accent-line"></div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/bonkjr-mascot.jpeg" alt="Bonk Jr" class="footer-logo" />
+          <p class="footer-tagline">Bonk Jr — Bonk's son. 100% community-owned.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#fees">Fees</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="footer-social-icons">
+            <a href="https://x.com/_bonkjr" class="social-icon" aria-label="X (Twitter)" target="_blank"><i
+                class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bonk Jr. All rights reserved. | Bonk's Son — 100% Community Owned 🐶</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
