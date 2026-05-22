@@ -527,6 +527,65 @@ section {
   box-shadow: 0 8px 30px var(--glow-yellow);
 }
 
+.btn-buy-now.btn-primary {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 5px 25px rgba(16, 185, 129, 0.4);
+}
+
+.btn-buy-now.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.6);
+  background: linear-gradient(135deg, #34D399 0%, #10B981 100%);
+}
+
+.contract-address-wrapper {
+  margin-top: 40px;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 10px 20px;
+  gap: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+}
+
+.contract-label {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--bg-yellow);
+  font-size: 1.1rem;
+}
+
+.contract-address {
+  font-family: monospace;
+  font-size: 0.95rem;
+  color: var(--neutral-warm);
+  letter-spacing: 0.5px;
+  word-break: break-all;
+}
+
+.btn-copy {
+  background: none;
+  border: none;
+  color: var(--bg-yellow);
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.btn-copy:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
 /* Hero Scrolling Ticker */
 .hero-ticker {
   position: absolute;

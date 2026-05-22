@@ -284,3 +284,23 @@ window.addEventListener('scroll', () => {
 
 console.log('%c BONK JR 🐶 ', 'font-size: 48px; font-weight: bold; color: #FFD700; text-shadow: 0 0 10px #E07B00;');
 console.log('%c Bonk\'s Son has arrived to dominate the meme universe! 🚀', 'font-size: 18px; color: #FFF8E7;');
+
+// ==========================================
+// COPY CONTRACT ADDRESS
+// ==========================================
+const copyBtn = document.getElementById('copyBtn');
+const contractAddress = document.getElementById('contractAddress');
+
+if (copyBtn && contractAddress) {
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(contractAddress.innerText).then(() => {
+      const icon = copyBtn.querySelector('i');
+      icon.className = 'fas fa-check';
+      setTimeout(() => {
+        icon.className = 'far fa-copy';
+      }, 2000);
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+  });
+}
